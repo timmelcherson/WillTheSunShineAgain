@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/list_parent_layout">
+
+    <TextView
+        android:id="@+id/city_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bottom_border_list"
+        android:foreground="?attr/selectableItemBackground"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:onClick="onClick"
+        android:clickable="true"/>
+
+</android.support.constraint.ConstraintLayout>

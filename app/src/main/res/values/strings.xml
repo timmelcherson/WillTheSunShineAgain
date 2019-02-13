@@ -1,0 +1,131 @@
+<resources>
+
+    <string name="app_name">Will the sun shine again?</string>
+
+
+    <!-- Weather API strings -->
+    <string name="metoffice_baseurl" translatable="false">
+        http://datapoint.metoffice.gov.uk/public/data/val/wxfcs/all/json/
+    </string>
+    <string name="metoffice_api_key" translatable="false">
+        key=87e3f22a-4197-4b87-882b-0bb20097a5b4
+    </string>
+    <string name="metoffice_sitelist">sitelist\?</string>
+    <string name="metoffice_daily_forecast" translatable="false">\?res=daily&amp;</string>
+    <string name="metoffice_three_hourly_forecast" translatable="false">\?res=3hourly&amp;</string>
+
+    <!-- Weather icon names -->
+    <string name="ic_weather_0" translatable="false">ic_weather_0</string>
+    <string name="ic_weather_1" translatable="false">ic_weather_1</string>
+    <string name="ic_weather_2" translatable="false">ic_weather_2</string>
+    <string name="ic_weather_3" translatable="false">ic_weather_3</string>
+    <!-- Number 4 is not used in API -->
+    <string name="ic_weather_5" translatable="false">ic_weather_5</string>
+    <string name="ic_weather_6" translatable="false">ic_weather_6</string>
+    <string name="ic_weather_7" translatable="false">ic_weather_7</string>
+    <string name="ic_weather_8" translatable="false">ic_weather_8</string>
+    <string name="ic_weather_9" translatable="false">ic_weather_9</string>
+    <string name="ic_weather_10" translatable="false">ic_weather_10</string>
+    <string name="ic_weather_11" translatable="false">ic_weather_11</string>
+    <string name="ic_weather_12" translatable="false">ic_weather_12</string>
+    <string name="ic_weather_13" translatable="false">ic_weather_13</string>
+    <string name="ic_weather_14" translatable="false">ic_weather_14</string>
+    <string name="ic_weather_15" translatable="false">ic_weather_15</string>
+    <string name="ic_weather_16" translatable="false">ic_weather_16</string>
+    <string name="ic_weather_17" translatable="false">ic_weather_17</string>
+    <string name="ic_weather_18" translatable="false">ic_weather_18</string>
+    <string name="ic_weather_19" translatable="false">ic_weather_19</string>
+    <string name="ic_weather_20" translatable="false">ic_weather_20</string>
+    <string name="ic_weather_21" translatable="false">ic_weather_21</string>
+    <string name="ic_weather_22" translatable="false">ic_weather_22</string>
+    <string name="ic_weather_23" translatable="false">ic_weather_23</string>
+    <string name="ic_weather_24" translatable="false">ic_weather_24</string>
+    <string name="ic_weather_25" translatable="false">ic_weather_25</string>
+    <string name="ic_weather_26" translatable="false">ic_weather_26</string>
+    <string name="ic_weather_27" translatable="false">ic_weather_27</string>
+    <string name="ic_weather_28" translatable="false">ic_weather_28</string>
+    <string name="ic_weather_29" translatable="false">ic_weather_29</string>
+    <string name="ic_weather_30" translatable="false">ic_weather_30</string>
+
+    <!-- Strings related to MainActivity -->
+    <string name="tv_main_location_str"></string>
+    <string name="tv_main_humidity_str"></string>
+    <string name="tv_humidity_str">Humidity:</string>
+    <string name="tv_wind_str">Wind:</string>
+    <string name="tv_main_wind_str"></string>
+    <string name="tv_main_temp_str"></string>
+    <string name="table1_title_str">Every 3 hours</string>
+    <string name="table2_title_str">Next 5 days</string>
+    <string name="tv_forecast_today">Today</string>
+
+    <!-- Strings related to SettingsScreenActivity -->
+    <string name="settings_screen_label">Settings</string>
+    <string name="refresh_city_list">Refresh List</string>
+    <string name="search_str">Search</string>
+
+    <!-- Strings related to FavoritesListActivity-->
+    <string name="favorites_str">Favorites</string>
+    <string name="toggle_filter_text">Filters</string>
+    <string name="filter_min">Min</string>
+    <string name="filter_max">Max</string>
+    <string name="filter_temp_title">Filter by temperature</string>
+    <string name="filter_humidity_title">Filter by humidity</string>
+    <string name="filter_wind_title">Filter by wind speed</string>
+
+    <!-- Strings related to SearchActivity -->
+
+    <!-- Shared preferences -->
+    <string name="preferences_file" translatable="false">tim.rguassessment.com.willthesunshineagain</string>
+
+    <!-- Shared preferences for favorites list-->
+    <string name="favorites_list_key" translatable="false">favorites_list_key</string>
+    <string name="clear_favorites">Clear favorites list</string>
+
+
+    <!-- Settings Screen Preferences -->
+
+    <!-- Home Location Preferences-->
+    <string name="pref_display_homeLocation_title">Home Location</string>
+    <string name="pref_display_homeLocation_summary_default">Choose a Home Location</string>
+    <string name="pref_display_homeLocation_key" translatable="false">display_home</string>
+    <string name="pref_display_homeLocation_default" translatable="false">310170</string>
+
+
+    <!-- Preferences category containing units -->
+    <string name="preferences_units_category_title">Units</string>
+    <!-- Temperature preferences -->
+    <string name="pref_temperature_units_title" translatable="false">Temperature units</string>
+    <string name="pref_temperature_units_summary">Choose Celsius or Fahrenheit</string>
+    <string name="pref_temperature_units_key" translatable="false">temperature_units_key</string>
+    <string name="pref_temperature_units_default" translatable="false">Celsius</string>
+    <string-array name="pref_temperature_units_values" translatable="false">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+    <string-array name="pref_temperature_units_entries" translatable="false">
+        <item>Celsius</item>
+        <item>Fahrenheit</item>
+    </string-array>
+
+    <!-- Measurements preferences-->
+    <string name="pref_measurement_units_title">Measurement units</string>
+    <string name="pref_measurement_units_summary">Choose Metric or Imperial units</string>
+    <string name="pref_measurement_units_key" translatable="false">measurement_units_key</string>
+    <string name="pref_measurement_units_default" translatable="false">Metric units</string>
+    <string name="tv_favorites_btn">Favorites</string>
+    <string name="btn_open_map_str">Show location on map</string>
+    <string name="tv_show_on_map_str">Show on map</string>
+
+    <string-array name="pref_measurement_units_values" translatable="false">
+        <item>Metric units</item>
+        <item>Imperial units</item>
+    </string-array>
+    <string-array name="pref_measurement_units_entries">
+        <item>Metric units</item>
+        <item>Imperial units</item>
+    </string-array>
+
+
+
+
+</resources>

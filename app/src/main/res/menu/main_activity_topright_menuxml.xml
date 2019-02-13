@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topright_menu">
+
+    <item
+        android:id="@+id/mi_settings"
+        android:title="@string/settings_screen_label"
+        app:showAsAction="never"
+        tools:orderInCategory="100" />
+</menu>

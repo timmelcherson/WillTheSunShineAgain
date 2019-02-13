@@ -1,0 +1,6 @@
+<vector android:name="@string/ic_weather_19" android:height="40dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="40dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000"
+        android:pathData="M386,248.478c0,78.864 -63.941,142.805 -142.805,142.805c-48.513,0 -91.395,-24.202 -117.195,-61.194c14.54,4.687 30.037,7.215 46.135,7.215c83.018,0 150.321,-67.303 150.321,-150.321c0,-23.778 -5.521,-46.258 -15.346,-66.237C353.886,144.197 386,192.587 386,248.478z"
+        android:strokeColor="#FFFFFF" android:strokeLineCap="round" android:strokeWidth="30"/>
+</vector>

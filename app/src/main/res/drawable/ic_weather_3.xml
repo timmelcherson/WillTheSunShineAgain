@@ -1,0 +1,23 @@
+<vector android:name="@string/ic_weather_3" android:height="40dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="40dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000"
+        android:pathData="M456.087,367.839c0,21.452 -17.396,39.161 -38.814,39.161H209.109c-34.792,0 -62.432,-28.538 -62.432,-63.33c0,-14.611 4.985,-28.055 13.374,-38.781c11.483,-14.817 29.428,-24.341 49.609,-24.341c3.025,0 6.016,0.086 8.939,0.533c6.326,-25.75 22.518,-47.641 44.349,-61.358c15.505,-9.798 33.898,-15.432 53.563,-15.432c55.66,0 100.765,45.107 100.765,100.767c0,8.182 -0.963,16.125 -2.819,23.757c0.928,-0.069 1.857,0.071 2.819,0.071C438.692,328.885 456.087,346.42 456.087,367.839z"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M262.946,219.73c-21.831,13.717 -38.023,35.617 -44.349,61.366c-2.922,-0.447 -5.913,-0.516 -8.939,-0.516c-20.18,0 -38.126,9.557 -49.609,24.375c-23.034,-12.136 -38.745,-36.27 -38.745,-64.117c0,-39.983 32.42,-72.402 72.402,-72.402C226.367,168.436 253.939,190.027 262.946,219.73z"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M194,105L194,143"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M56,242L94,242" android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M261.622,174.171L289.547,146.246"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M93.782,337.075L121.707,309.15"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M93.782,146.246L121.707,174.171"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+</vector>

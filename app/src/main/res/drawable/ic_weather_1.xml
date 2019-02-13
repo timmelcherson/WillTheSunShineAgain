@@ -1,0 +1,28 @@
+<vector android:name="@string/ic_weather_1" android:height="40dp" android:viewportHeight="512"
+    android:viewportWidth="512" android:width="40dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="#00000000"
+        android:pathData="M255.899,256.45m-105.706,0a105.706,105.706 0,1 1,211.412 0a105.706,105.706 0,1 1,-211.412 0"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M255,58L255,115" android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M56,256L114,256" android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M399,256L456,256"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M255,397L255,454"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M355.034,159.118L395.804,118.348"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M355.034,356.186L395.804,396.956"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M109.989,396.956L150.759,356.186"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+    <path android:fillColor="#00000000"
+        android:pathData="M109.989,118.348L150.759,159.118"
+        android:strokeColor="#FFFFFF" android:strokeWidth="30"/>
+</vector>

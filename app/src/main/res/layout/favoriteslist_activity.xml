@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical"
+    tools:context=".FavoritesListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:id="@+id/tv_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:text="@string/toggle_filter_text"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/filter_toggle_arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_arrow_right_black"
+            tools:padding="4dp" />
+
+    </LinearLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/seekbar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="8dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/temp_seekbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/filter_temp_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/temp_seekbar_tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/filter_min"
+            app:layout_constraintBottom_toBottomOf="@+id/temp_seekbar"
+            app:layout_constraintEnd_toStartOf="@+id/temp_seekbar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/temp_seekbar" />
+
+        <SeekBar
+            android:id="@+id/temp_seekbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:paddingVertical="5dp"
+            android:progressTint="@color/colorPrimary"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintEnd_toStartOf="@+id/temp_seekbar_tv_max"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/temp_seekbar_tv_min"
+            app:layout_constraintTop_toBottomOf="@+id/temp_seekbar_tv_title" />
+
+        <TextView
+            android:id="@+id/temp_seekbar_tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/filter_max"
+            app:layout_constraintBottom_toBottomOf="@+id/temp_seekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/temp_seekbar"
+            app:layout_constraintTop_toTopOf="@+id/temp_seekbar" />
+
+        <TextView
+            android:id="@+id/humidity_seekbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/filter_humidity_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/temp_seekbar" />
+
+        <TextView
+            android:id="@+id/humidity_seekbar_tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/filter_min"
+            app:layout_constraintBottom_toBottomOf="@+id/humidity_seekbar"
+            app:layout_constraintEnd_toStartOf="@+id/humidity_seekbar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/humidity_seekbar" />
+
+        <SeekBar
+            android:id="@+id/humidity_seekbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:paddingVertical="5dp"
+            android:progressTint="@color/colorPrimary"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintEnd_toStartOf="@+id/humidity_seekbar_tv_max"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/humidity_seekbar_tv_min"
+            app:layout_constraintTop_toBottomOf="@+id/humidity_seekbar_tv_title" />
+
+        <TextView
+            android:id="@+id/humidity_seekbar_tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="@string/filter_max"
+            app:layout_constraintBottom_toBottomOf="@+id/humidity_seekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/humidity_seekbar"
+            app:layout_constraintTop_toTopOf="@+id/humidity_seekbar" />
+
+        <TextView
+            android:id="@+id/wind_seekbar_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/filter_wind_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/humidity_seekbar" />
+
+        <TextView
+            android:id="@+id/wind_seekbar_tv_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="@string/filter_min"
+            app:layout_constraintBottom_toBottomOf="@+id/wind_seekbar"
+            app:layout_constraintEnd_toStartOf="@+id/wind_seekbar"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/wind_seekbar" />
+
+        <SeekBar
+            android:id="@+id/wind_seekbar"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="8dp"
+            android:paddingVertical="5dp"
+            android:progressTint="@color/colorPrimary"
+            android:thumb="@drawable/seekbar_thumb"
+            app:layout_constraintEnd_toStartOf="@+id/wind_seekbar_tv_max"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/wind_seekbar_tv_min"
+            app:layout_constraintTop_toBottomOf="@+id/wind_seekbar_tv_title" />
+
+        <TextView
+            android:id="@+id/wind_seekbar_tv_max"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="@string/filter_max"
+            app:layout_constraintBottom_toBottomOf="@+id/wind_seekbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/wind_seekbar"
+            app:layout_constraintTop_toTopOf="@+id/wind_seekbar" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/favlist_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" />
+
+    <!--<android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_add_white_24dp"
+        app:backgroundTint="@color/colorPrimary"
+        app:fabSize="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:rippleColor="@color/white" />-->
+
+
+</LinearLayout>
